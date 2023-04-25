@@ -8,3 +8,8 @@ FROM "CharlotteChaze/BreakIntoTech"."netflix_people" people
 LEFT JOIN "CharlotteChaze/BreakIntoTech"."netflix_titles_info" titles
 ON people.show_id=titles.show_id;
 
+--Movie count From Netflix_Titles_info
+
+Select count(*) 
+FROM "CharlotteChaze/BreakIntoTech"."netflix_titles_info"
+WHERE type='Movie';
